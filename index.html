@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <div class="wrapper signup " id="signup">
+                <h2>Create Your Account</h2>
+                <div class="form-control">
+                    <input type="text" id="username" placeholder="Username">
+                    <i class="bi bi-check2-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    
+                    <input type="text" id="email" placeholder="Email">
+                    <i class="bi bi-check2-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                   
+                    <input type="password" id="password" placeholder="Enter password">
+                    <i class="bi bi-check2-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="password2" placeholder="Confirm password">
+                    <i class="bi bi-check2-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <button>Submit</button>
+                <div class="account-exist">
+                    <p>Already have an account? <a href="#" onclick="swapPage()">Login</a> </p>
+                </div>
+            </div>
+
+            <div class="wrapper signin" id="login">
+                <h2>Login Now</h2>
+                <div class="form-control">
+                    <input type="text" id="logUsername" placeholder="Username">
+                    <i class="bi bi-check2-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="logEmail" placeholder="Email">
+                    <i class="bi bi-check2-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                   
+                    <input type="password" id="logPassword" placeholder="Enter password">
+                    <i class="bi bi-check2-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="forget-password"><a href="#">Forget Password?</a></div>
+                <button>Login</button>
+                <div class="account-exist">
+                    <p>Don't have an account?<a onclick="swapPage()" id="login"> SignUp</a></p>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
